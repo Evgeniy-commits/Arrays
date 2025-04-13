@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 #define HW_TASK_SHIFT
@@ -12,11 +12,11 @@ void main()
 	int arr[n];
 	int Shift;
 
-	cout << "Ââåäèòå ñäâèã: "; 
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ´Ð²Ð¸Ð³: "; 
 	while (true)
 	{
 		cin >> Shift;
-		if (Shift < 0 || Shift >= 10) cout << "Ââåäèòå íå îòðèöàòåëüíîå ÷èñëî, ìåíüøå 10: ";
+		if (Shift < 0 || Shift >= 10) cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ðµ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾, Ð¼ÐµÐ½ÑŒÑˆÐµ 10: ";
 		else break;
 	}
 	for (int i = 0; i < n; i++)
