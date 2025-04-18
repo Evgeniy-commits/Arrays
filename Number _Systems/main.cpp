@@ -3,14 +3,8 @@
 using namespace std;
 
 //#define HW_TASK_SHIFT_RIGHT
-//#define NUMBER_SYSTEM
+#define NUMBER_SYSTEM
 
-#define A  "10"
-#define B  "11"
-#define C  "12"
-#define D  "13"
-#define E  "14"
-#define F  "15"
 #define tab "\t"
 
 void main()
