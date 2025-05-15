@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 using namespace std;
 
 //#define ARR2D_SORT_FUNCTION
@@ -128,7 +128,7 @@ int repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS])
 				arr[j] = ROWS * COLS;
 			}
 		}
-		if (count > 1 && number != ROWS * COLS) cout << "×èñëî " << number << " âñòðå÷àåòñÿ " << count << " ðàçà" << endl;
+		if (count > 1 && number != ROWS * COLS) cout << "Ð§Ð¸ÑÐ»Ð¾ " << number << " Ð²ÑÑ‚Ñ€ÐµÑ‡Ð°ÐµÑ‚ÑÑ " << count << " Ñ€Ð°Ð·Ð°" << endl;
 	}
 	return 0;
 }
