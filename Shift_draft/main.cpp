@@ -40,6 +40,7 @@ void main()
 	while (true)
 	{
 		key = _getch();
+		system("CLS");
 		if (key == Escape) break;
 		switch (key)
 		{

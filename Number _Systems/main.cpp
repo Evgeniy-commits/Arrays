@@ -3,7 +3,7 @@
 using namespace std;
 
 //#define HW_TASK_SHIFT_RIGHT
-//#define NUMBER_SYSTEM
+#define NUMBER_SYSTEM
 
 #define tab "\t"
 
