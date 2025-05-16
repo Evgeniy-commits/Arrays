@@ -7,11 +7,11 @@ using namespace std;
 #define tab "\t"
 const int ROWS = 5;
 const int COLS = 4;
-int randomArr2D(int Arr2D[ROWS][COLS]);
-int printArr2D(int Arr2D[ROWS][COLS]);
-int sortArr2D(int Arr2D[ROWS][COLS]);
-int uniqueArr2D(int Arr2D[ROWS][COLS]);
-int repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS]);
+void randomArr2D(int Arr2D[ROWS][COLS]);
+void printArr2D(int Arr2D[ROWS][COLS]);
+void sortArr2D(int Arr2D[ROWS][COLS]);
+void uniqueArr2D(int Arr2D[ROWS][COLS]);
+void repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS]);
 
 void main()
 {
@@ -42,14 +42,14 @@ void main()
 #endif // ARR2D_REPEAT_FUNCTION
 }
 
-int randomArr2D(int Arr2D[ROWS][COLS])
+void randomArr2D(int Arr2D[ROWS][COLS])
 {
+	
 	for (int i = 0; i < ROWS; i++)
 		for (int j = 0; j < COLS; j++)
 			Arr2D[i][j] = rand() % 10;
-	return 0;
 }
-int printArr2D(int Arr2D[ROWS][COLS])
+void printArr2D(int Arr2D[ROWS][COLS])
 {
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -59,9 +59,8 @@ int printArr2D(int Arr2D[ROWS][COLS])
 		}
 		cout << endl;
 	}
-	return 0;
 }
-int sortArr2D(int Arr2D[ROWS][COLS])
+void sortArr2D(int Arr2D[ROWS][COLS])
 {
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -77,9 +76,8 @@ int sortArr2D(int Arr2D[ROWS][COLS])
 			}
 		}
 	}
-	return 0;
 }
-int uniqueArr2D(int Arr2D[ROWS][COLS])
+void uniqueArr2D(int Arr2D[ROWS][COLS])
 {
 	for (int i = 0; i < ROWS; i++)
 	{
@@ -105,9 +103,8 @@ int uniqueArr2D(int Arr2D[ROWS][COLS])
 			} while (!unique);
 		}
 	}
-	return 0;
 }
-int repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS])
+void repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS])
 {
 	int k = 0;
 	for (int i = 0; i < ROWS; i++)
@@ -130,5 +127,4 @@ int repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS])
 		}
 		if (count > 1 && number != ROWS * COLS) cout << "Число " << number << " встречается " << count << " раза" << endl;
 	}
-	return 0;
 }
