@@ -11,7 +11,7 @@ void randomArr2D(int Arr2D[ROWS][COLS]);
 void printArr2D(int Arr2D[ROWS][COLS]);
 void sortArr2D(int Arr2D[ROWS][COLS]);
 void uniqueArr2D(int Arr2D[ROWS][COLS]);
-void repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS]);
+void repeatArr2D(int Arr2D[ROWS][COLS]);
 
 void main()
 {
@@ -38,7 +38,7 @@ void main()
 	randomArr2D(Arr2D);
 	printArr2D(Arr2D);
 	cout << endl;
-	repeatArr2D(Arr2D, arr);
+	repeatArr2D(Arr2D);
 #endif // ARR2D_REPEAT_FUNCTION
 }
 
@@ -104,8 +104,9 @@ void uniqueArr2D(int Arr2D[ROWS][COLS])
 		}
 	}
 }
-void repeatArr2D(int Arr2D[ROWS][COLS], int arr[ROWS * COLS])
+void repeatArr2D(int Arr2D[ROWS][COLS])
 {
+	int arr[ROWS * COLS];
 	int k = 0;
 	for (int i = 0; i < ROWS; i++)
 		for (int j = 0; j < COLS; j++)
